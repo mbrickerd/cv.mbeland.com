@@ -1,0 +1,43 @@
+title: Personalisation & Recommendation Engine
+experienceId: eraneos-junior-data-scientist
+employer: Eraneos
+client: Pathé
+sector: Media & Entertainment
+duration: 11/2019 to 03/2020
+role: Junior Data Scientist
+
+printSummary: >
+  Built and deployed a collaborative filtering recommendation engine using matrix
+  factorisation, integrated with Airflow and deployed on AWS SageMaker for Pathé's
+  email marketing campaigns.
+
+onlineSummary: >
+  Pathé's email campaigns sent generic, non-personalised movie recommendations to
+  their entire subscriber base, yielding low engagement and conversion. Built a matrix
+  factorisation recommendation engine deployed via SageMaker and Airflow, enabling
+  personalised suggestions at scale.
+
+details:
+  - "Situation: Pathé's email marketing campaigns were sending identical, non-personalised movie recommendations to their entire subscriber base, resulting in low customer engagement and poor conversion rates across all segments."
+  - "Task: Build and deploy a personalised recommendation engine that could generate user-level movie suggestions at scale for automated email campaigns."
+  - "Action: Implemented a user-based collaborative filtering model using matrix factorisation techniques to learn latent preference representations from historical viewing and interaction data; integrated the inference pipeline with Apache Airflow for automated weekly orchestration and retraining; deployed the model on AWS SageMaker for scalable batch inference across the full subscriber base."
+  - "Result: Enabled Pathé's e-commerce team to deliver personalised, data-driven movie recommendations in email campaigns for every subscriber, improving relevance, driving measurably higher engagement, and increasing conversion rates."
+
+skills:
+  - name: Python
+    level: 4
+  - name: Machine Learning
+    level: 4
+  - name: AWS SageMaker
+    level: 3
+  - name: Apache Airflow
+    level: 3
+  - name: AWS
+    level: 3
+
+tags:
+  - Machine Learning
+  - AWS
+  - Recommendation Systems
+  - Media
+  - Personalisation

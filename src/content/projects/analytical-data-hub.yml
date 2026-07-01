@@ -1,42 +1,63 @@
-title: Analytics Data Hub Orchestration Design
+title: Analytics Data Hub — Orchestration & Domain Modelling
 experienceId: eraneos-senior-data-engineer
 employer: Eraneos
-client: Client project
-sector: Analytics / Cloud Data Platform
-duration: 2024 to 2025
+client: Rituals Cosmetics
+sector: Retail
+duration: 06/2024 to 07/2025
 role: Senior Data Engineer
 
 printSummary: >
-  Built modular BigQuery, dbt and Cloud Composer/Airflow pipelines with
-  GitHub Actions and Terraform.
+  Designed a Cloud Composer and dbt orchestration framework for the Analytics Data Hub
+  and led migration of the Sales Order domain into governed BigQuery dbt models.
 
 onlineSummary: >
-  Designed orchestration and transformation layers for an analytics data hub.
+  Rituals' Analytical Data Hub had no consistent orchestration layer, no data lineage,
+  and its most-used reporting domain was fragmented across siloed teams. Designed a
+  modular orchestration and CI/CD-driven infrastructure pattern, migrated the Sales Order
+  domain into a governed dbt layer in BigQuery with full column-level lineage, and
+  established pipeline monitoring and data contracts as the platform standard.
 
 details:
-  - Built modular data pipelines using BigQuery, dbt and Cloud Composer/Airflow.
-  - Used GitHub Actions for CI/CD.
-  - Used Terraform for infrastructure provisioning.
-  - Structured raw data into maintainable, tested transformation layers.
-  - Supported downstream analytics use cases with governed transformation logic.
+  - "Situation: The ADH lacked a scalable orchestration layer — workflows were managed ad hoc across siloed teams, causing frequent deployment conflicts, duplicated logic, and inconsistent data outputs that eroded trust in reporting."
+  - "Task: Design and implement a reusable, modular orchestration framework and migrate the most widely used reporting domain into the new platform."
+  - "Action: Architected a Cloud Composer and dbt orchestration layer following medallion architecture principles using Cloud Run for compute; provisioned infrastructure via Terraform workspaces as a CI/CD-driven IaC pattern enabling isolated, conflict-free team development; migrated Sales Order domain logic into standardised BigQuery dbt models with full column-level lineage and documentation from raw sys-layer through to curated silver-layer; established data contracts and pipeline monitoring via Cloud Composer, aligning data definitions with business stakeholders."
+  - "Result: Reduced deployment conflicts across teams, established a reusable pipeline pattern with built-in lineage and governance that accelerated onboarding of new data domains, and delivered a governed Sales Order domain that became the single source of truth for cross-team analytics."
 
 skills:
   - name: BigQuery
     level: 5
   - name: dbt
-    level: 4
+    level: 5
   - name: Apache Airflow
     level: 4
   - name: Cloud Composer
     level: 4
-  - name: Terraform
-    level: 4
-  - name: GitHub Actions
+  - name: Cloud Run
     level: 4
   - name: GCP
+    level: 4
+  - name: Terraform
+    level: 4
+  - name: Atlantis
+    level: 4
+  - name: Data Modelling
+    level: 5
+  - name: SQL
+    level: 5
+  - name: CI/CD
+    level: 4
+  - name: Data Governance
+    level: 4
+  - name: Data Contracts
     level: 4
 
 tags:
   - GCP
   - dbt
+  - BigQuery
   - Airflow
+  - Retail
+  - Data Platform
+  - Data Governance
+  - Data Lineage
+  - CI/CD

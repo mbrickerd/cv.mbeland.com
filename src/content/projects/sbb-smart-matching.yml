@@ -1,0 +1,46 @@
+title: Spare Parts Smart Matching Engine
+experienceId: eraneos-senior-data-engineer
+employer: Eraneos
+client: Schweizerische Bundesbahnen (SBB)
+sector: Public Transportation
+duration: 04/2024 to 10/2024
+role: Senior Data Engineer
+
+printSummary: >
+  Built a PySpark semantic and graph-based matching engine on Azure Databricks to
+  identify unlinked train spare parts in SBB's SAP data, resolving 25% of missing
+  records.
+
+onlineSummary: >
+  SBB's SAP dataset had significant gaps in spare part-to-train linkages, degrading
+  procurement efficiency and data reliability at scale. Designed and built a scalable
+  PySpark batch processing pipeline on Azure Databricks following Medallion Architecture,
+  applying semantic and graph-based matching to automatically resolve 25% of missing
+  records and establish a repeatable data quality pattern.
+
+details:
+  - "Situation: Swiss Railways (SBB) had large gaps in their SAP records linking spare parts to the trains that use them across their network, degrading parts management efficiency and making procurement decisions unreliable."
+  - "Task: Build a scalable data processing pipeline that could automatically identify and link spare parts to trains and suppliers using textual description data, without requiring manual data entry."
+  - "Action: Designed and implemented a scalable batch data processing pipeline on Azure Databricks using PySpark and Medallion Architecture — ingesting raw SAP data through bronze, silver, and gold layers with data quality checks at each stage; applied graph techniques to model part-train relationships and semantic matching on textual part and train descriptions to surface equivalences across thousands of records."
+  - "Result: Successfully matched 25% of previously unlinked or missing train parts to their correct trains and suppliers, significantly improving the integrity of SBB's data management system and providing a scalable, automated foundation for ongoing data quality improvements."
+
+skills:
+  - name: PySpark
+    level: 5
+  - name: Python
+    level: 4
+  - name: Azure Databricks
+    level: 4
+  - name: SQL
+    level: 4
+  - name: Data Modelling
+    level: 4
+  - name: Machine Learning
+    level: 3
+
+tags:
+  - PySpark
+  - Azure
+  - Semantic Search
+  - Data Quality
+  - Transportation

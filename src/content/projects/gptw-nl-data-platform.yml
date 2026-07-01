@@ -1,0 +1,76 @@
+title: Employee Survey Data Platform
+experienceId: moose-stack
+employer: The Moose Stack
+client: Great Place To Work Netherlands
+sector: HR Technology
+duration: 09/2025 to 06/2026
+role: Freelance Senior Data Engineer
+
+printSummary: >
+  Designed and delivered a complete Azure-native event-driven data platform to
+  ingest, validate, and transform employee survey data through a medallion
+  architecture, with a reusable Terraform module library and full CI/CD via
+  Azure DevOps.
+
+onlineSummary: >
+  GPTW NL had no scalable infrastructure to reliably process and analyse employee
+  survey data across their client portfolio. Designed and delivered a cloud-native
+  data platform from the ground up — an event-driven Azure pipeline following
+  medallion architecture, a reusable Terraform module library spanning compute,
+  networking, identity, data, and observability, and a fully automated Azure
+  DevOps CI/CD workflow with multi-environment deployment, least-privilege RBAC,
+  and end-to-end pipeline observability via OpenTelemetry.
+
+details:
+  - "Situation: GPTW NL had no scalable infrastructure to reliably ingest, validate, and transform employee survey submissions across their client portfolio — data was processed manually with no consistent data model, governance layer, or audit trail."
+  - "Task: Design and build a production-grade, cloud-native data platform to automate survey data processing from file upload through to analytics-ready datasets, with full CI/CD, security controls, and observability from day one."
+  - "Action: Architected an event-driven Azure pipeline — Event Grid detects file uploads to Azure Storage and triggers Python Azure Durable Functions (using Polars and Pydantic for schema validation and data quality enforcement), persisting validated data to PostgreSQL as the bronze layer, with Azure Synapse pipelines transforming data through silver and gold layers; provisioned all infrastructure via Terraform with a purpose-built primitive and composite module library (covering compute, networking, identity, data, events, and observability) enabling consistent, compliant resource provisioning; implemented OIDC-based service connections, managed identity runtime authentication, private endpoints, and Azure Key Vault for a fully secretless security model; built Azure DevOps CI/CD pipelines with automated security scanning (Checkov, TFLint), infrastructure documentation (terraform-docs), and manual approval gates for production; instrumented the pipeline with OpenTelemetry for end-to-end observability and audit logging."
+  - "Result: Delivered a production-grade, fully automated data platform enabling reliable processing of employee survey data from ingestion to analytics-ready outputs — with zero-secret infrastructure, documented and reusable Terraform modules adopted across the platform, and a multi-environment CI/CD workflow meeting GDPR compliance requirements."
+
+skills:
+  - name: Azure
+    level: 5
+  - name: Terraform
+    level: 5
+  - name: Azure DevOps
+    level: 5
+  - name: CI/CD
+    level: 5
+  - name: Azure Functions
+    level: 4
+  - name: Azure Synapse
+    level: 4
+  - name: Azure Event Grid
+    level: 4
+  - name: Azure Storage
+    level: 4
+  - name: Azure PostgreSQL
+    level: 4
+  - name: Azure Key Vault
+    level: 4
+  - name: Application Insights
+    level: 3
+  - name: Python
+    level: 5
+  - name: SQL
+    level: 4
+  - name: Data Modelling
+    level: 4
+  - name: Data Governance
+    level: 4
+  - name: Data Contracts
+    level: 4
+  - name: OpenTelemetry
+    level: 3
+
+tags:
+  - Azure
+  - Terraform
+  - CI/CD
+  - Data Platform
+  - Data Governance
+  - Medallion Architecture
+  - ETL
+  - Event-driven
+  - HR Technology
+  - Platform Engineering

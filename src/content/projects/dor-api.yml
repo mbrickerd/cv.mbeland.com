@@ -1,0 +1,51 @@
+title: Regulatory Compliance API — DOR Integration
+experienceId: eraneos-senior-data-engineer
+employer: Eraneos
+client: Dusseldorp Automotive
+sector: Automotive
+duration: 07/2024 to 09/2024
+role: Senior Data Engineer
+
+printSummary: >
+  Built a FastAPI-based Azure Function to automate vehicle transaction registration
+  with the Digitaal Opkopers Registraar (DOR), ensuring real-time regulatory compliance.
+
+onlineSummary: >
+  Dusseldorp Automotive had no integration with the newly mandated DOR registration
+  system and faced compliance risk as the enforcement deadline approached. Designed and
+  shipped a production Azure Function using FastAPI with OAuth2-based service-to-service
+  authentication, automating near real-time compliance reporting and full audit logging
+  across vehicle sales, purchases, and inter-dealer transfers.
+
+details:
+  - "Situation: New Dutch regulations required automotive traders to register all vehicle transactions with the Digitaal Opkopers Registraar (DOR) in near real-time — Dusseldorp had no existing integration and faced regulatory non-compliance risk as the enforcement deadline approached."
+  - "Task: Design and build an automated API integration that registers transactions as they occur, with full audit logging and zero manual intervention."
+  - "Action: Built a FastAPI application deployed as an Azure Function, integrated with the DOR REST API to handle vehicle sales, purchases, and inter-dealer transfer event types; implemented OAuth2-based service-to-service authentication via Azure App Registration and managed credential lifecycle via Azure Key Vault; used Pydantic for strict request and payload validation with full audit logging for regulatory traceability; provisioned the full infrastructure via Terraform with automated deployment via Azure DevOps."
+  - "Result: Delivered full regulatory compliance at go-live, provided dealers with real-time transaction visibility, and replaced a manual reporting process entirely — significantly reducing operational overhead and compliance risk."
+
+skills:
+  - name: Python
+    level: 5
+  - name: FastAPI
+    level: 5
+  - name: Azure Functions
+    level: 4
+  - name: Azure Blob Storage
+    level: 3
+  - name: Azure Key Vault
+    level: 3
+  - name: Azure App Registration
+    level: 3
+  - name: Terraform
+    level: 4
+  - name: Azure
+    level: 4
+  - name: Azure DevOps
+    level: 3
+
+tags:
+  - Azure
+  - FastAPI
+  - API
+  - Regulatory
+  - Automotive

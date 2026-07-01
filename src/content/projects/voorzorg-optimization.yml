@@ -1,0 +1,52 @@
+title: Prescription Fulfillment Optimization Platform
+experienceId: eraneos-junior-data-scientist
+employer: Eraneos
+client: Apotheek Voorzorg
+sector: Pharmaceuticals
+duration: 05/2019 to 04/2022
+role: Data Scientist / ML Engineer
+
+printSummary: >
+  Built a digital twin and heuristic optimization system for automated prescription
+  fulfillment across three iterative phases, delivering €500K in cost savings in the
+  first year.
+
+onlineSummary: >
+  Voorzorg's manual prescription machine configuration had no tooling to simulate or
+  optimise allocation before applying changes in production. Delivered a digital twin,
+  self-service optimization web app, and real-time intra-day Planner module across four
+  phases — achieving €500K in savings within year one.
+
+details:
+  - "Situation: Voorzorg operated large-scale automated prescription fulfillment machines across a recurring 2-week production cycle, but all machine configuration was done manually with no ability to simulate outcomes or test optimisation strategies before making changes in production."
+  - "Task: Build a simulation and optimisation system that could model the full production process, recommend optimal machine configurations, and empower the operations team to run scenarios independently."
+  - "Action: Phase 1 — built a digital twin of the production process from historical data and implemented a custom heuristic algorithm to optimise machine and pill allocation across the 2-week cycle, identifying the optimal planning window. Phase 2 — extended the simulation to support new Filia machine types and built a self-service Flask web app enabling the purchasing team to run and share optimisation reports without engineering involvement. Phase 3 — added a Planner module for intra-day prescription prioritisation, delivering real-time granularity for urgent order management. Phase 4 — refactored the full platform to a production-grade FastAPI and Vue.js application deployed as an Azure App Service with Postgres for persistent input data storage."
+  - "Result: Achieved €500K in cost savings within the first year of deployment; eliminated reliance on manual production planning; delivered a fully self-service platform that empowered the purchasing team to make data-driven machine configuration decisions independently and in real time."
+
+skills:
+  - name: Python
+    level: 5
+  - name: FastAPI
+    level: 4
+  - name: Azure
+    level: 3
+  - name: Azure Blob Storage
+    level: 3
+  - name: Azure Key Vault
+    level: 3
+  - name: Azure PostgreSQL
+    level: 3
+  - name: Docker
+    level: 3
+  - name: SQL
+    level: 3
+  - name: Machine Learning
+    level: 3
+
+tags:
+  - Optimization
+  - Pharmaceuticals
+  - Python
+  - Digital Twin
+  - Azure
+  - Simulation

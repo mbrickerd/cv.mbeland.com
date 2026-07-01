@@ -1,0 +1,55 @@
+title: Forecasting Pipeline Modernisation & Explainability
+experienceId: eraneos-senior-ml-engineer
+employer: Eraneos
+client: Reckitt
+sector: Retail / FMCG
+duration: 09/2022 to 12/2023
+role: Senior ML Engineer
+
+printSummary: >
+  Modernised a legacy R-based forecasting ETL pipeline to a scalable Python/PySpark
+  stack on Databricks via Azure Data Factory, delivering SHAP-based explainability
+  and MLflow model tracking across thousands of SKUs.
+
+onlineSummary: >
+  Reckitt's demand forecasting was built on a fragile, unmaintainable R-based ETL
+  pipeline with no explainability or audit trail across thousands of SKUs. Rebuilt
+  the full data transformation and forecasting pipeline in Python/PySpark on Databricks,
+  orchestrated via Azure Data Factory, and introduced SKU-level SHAP explainability
+  with MLflow for versioning and automated audit reporting.
+
+details:
+  - "Situation: Reckitt's ARIMA-based demand forecasting pipeline for health and hygiene product lines was written in R, creating maintenance bottlenecks across thousands of SKUs — and business stakeholders had no visibility into why models made specific predictions, limiting trust and adoption in strategic planning."
+  - "Task: Modernise the forecasting ETL pipeline to a maintainable, scalable Python/PySpark stack and implement a SHAP explainability layer to make model outputs transparent and auditable for end-of-year planning."
+  - "Action: Re-engineered the legacy R ETL pipeline into modular PySpark transformations within Azure Data Factory and Databricks, preserving forecast accuracy while enabling parallelisation across all SKUs; built SHAP-based explainability notebooks computing per-feature attribution values at SKU level across monthly data runs; integrated MLflow for model versioning, lineage tracking, and automated explainability report generation."
+  - "Result: Eliminated R dependency and enabled faster iteration on model improvements; delivered transparent, auditable forecasting outputs that increased stakeholder confidence and drove higher adoption of model outputs during end-of-year planning cycles."
+
+skills:
+  - name: Python
+    level: 5
+  - name: PySpark
+    level: 5
+  - name: SHAP
+    level: 5
+  - name: MLflow
+    level: 4
+  - name: Azure Databricks
+    level: 4
+  - name: Azure Data Factory
+    level: 4
+  - name: Azure Blob Storage
+    level: 3
+  - name: Machine Learning
+    level: 4
+  - name: MLOps
+    level: 4
+
+tags:
+  - PySpark
+  - MLOps
+  - SHAP
+  - Azure
+  - Retail
+  - Forecasting
+  - ETL
+  - Data Pipeline

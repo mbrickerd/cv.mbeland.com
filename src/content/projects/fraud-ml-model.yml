@@ -1,4 +1,4 @@
-title: Fraud ML Model Upgrade
+title: Fraud Detection ML Model Upgrade
 experienceId: bol-senior-data-engineer
 employer: bol.com
 client: Internal
@@ -7,32 +7,39 @@ duration: 2025 to present
 role: Senior Data Engineer
 
 printSummary: >
-  Upgraded an existing fraud detection machine learning model and implemented
-  structured retraining and monitoring.
+  Upgraded a fraudulent retailer detection ML model and introduced a structured
+  MLflow-based retraining and monitoring framework.
 
 onlineSummary: >
-  Improved the reliability and operational maintainability of a fraudulent retailer
-  detection model.
+  An ageing fraud detection model was producing declining recall with no systematic
+  retraining process or pipeline observability in place. Rebuilt the production feature
+  engineering pipeline, improved model architecture, and introduced automated retraining,
+  drift monitoring, and alerting — bringing the full model lifecycle under engineering
+  control and eliminating ad-hoc intervention.
 
 details:
-  - Upgraded an existing machine learning model for fraudulent retailer detection.
-  - Implemented a structured retraining process.
-  - Added monitoring and production oversight to improve model reliability.
-  - Worked at the intersection of production data engineering and applied ML.
+  - "Situation: The existing classification model for fraudulent retailer detection had degrading recall due to evolving fraud patterns and no systematic retraining process, increasing financial and reputational risk across the marketplace."
+  - "Task: Rebuild the model pipeline with improved features and establish a production-grade retraining and monitoring cadence to make the model self-sustaining."
+  - "Action: Refactored the feature engineering pipeline to incorporate richer behavioural signals and improve data quality and signal coverage; benchmarked and selected an improved model architecture; implemented MLflow for experiment tracking, model versioning, and automated drift monitoring with alerting — establishing a fully observable, production-grade model lifecycle with structured retraining triggers."
+  - "Result: Improved recall on held-out validation data and introduced a structured retraining cadence with drift alerting that eliminated the need for ad-hoc manual model updates, reducing operational overhead and improving marketplace risk coverage."
 
 skills:
   - name: Python
     level: 5
   - name: Machine Learning
     level: 4
-  - name: Model monitoring
+  - name: MLflow
     level: 4
-  - name: Data engineering
+  - name: Model Monitoring
     level: 5
   - name: MLOps
     level: 4
+  - name: Data Engineering
+    level: 5
 
 tags:
-  - Python
   - ML
-  - Fraud
+  - Fraud Detection
+  - MLOps
+  - Python
+  - E-commerce

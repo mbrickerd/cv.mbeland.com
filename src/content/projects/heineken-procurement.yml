@@ -1,0 +1,45 @@
+title: Global Spare Parts Procurement Optimization
+experienceId: eraneos-ml-engineer
+employer: Eraneos
+client: Heineken
+sector: Manufacturing / FMCG
+duration: 10/2022 to 07/2023
+role: ML Engineer
+
+printSummary: >
+  Built a semantic matching solution using PyTorch on AWS SageMaker to identify
+  equivalent spare parts across Heineken's global supplier and factory network.
+
+onlineSummary: >
+  Heineken procurement teams had no visibility into duplicate or equivalent spare parts
+  across thousands of global suppliers and factories, leading to redundant ordering at
+  scale. Applied semantic matching with PyTorch embeddings on AWS SageMaker to surface
+  part equivalences globally and enable procurement consolidation.
+
+details:
+  - "Situation: Heineken's global procurement teams across factories and suppliers had no tooling to identify equivalent or duplicate spare parts, resulting in redundant orders and missed consolidation opportunities at significant scale across multiple continents."
+  - "Task: Build a data-driven matching solution to automatically surface part equivalences and supplier relationships across Heineken's global spare parts catalogue."
+  - "Action: Designed an event-driven batch processing architecture on AWS — Lambda-triggered SageMaker training and inference jobs with processed outputs persisted to S3 for downstream analytical access; applied semantic matching using PyTorch sentence embeddings to compute similarity scores across spare part descriptions for thousands of suppliers and factories globally."
+  - "Result: Identified part equivalences and supplier overlaps across global procurement data at scale, providing Heineken with actionable insights to consolidate purchasing decisions and reduce redundant cross-factory orders, with direct impact on global procurement spend efficiency."
+
+skills:
+  - name: Python
+    level: 5
+  - name: PyTorch
+    level: 4
+  - name: AWS SageMaker
+    level: 4
+  - name: Machine Learning
+    level: 4
+  - name: AWS
+    level: 4
+  - name: AWS Lambda
+    level: 3
+
+tags:
+  - Machine Learning
+  - AWS
+  - PyTorch
+  - Semantic Search
+  - Manufacturing
+  - Procurement

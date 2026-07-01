@@ -1,0 +1,57 @@
+title: Client Survey Report Automation
+experienceId: moose-stack
+employer: The Moose Stack
+client: Great Place To Work UK
+sector: HR Technology / Consulting
+duration: 06/2026 to present
+role: Freelance Data Engineer
+
+printSummary: >
+  Built containerised R Shiny web applications that automate the generation of
+  employee survey manager reports and PowerPoint consulting decks from Azure
+  Blob Storage, replacing a fully manual consultant process.
+
+onlineSummary: >
+  GPTW UK consultants were generating client-facing manager reports and
+  consulting decks manually for each engagement — a slow, inconsistent process
+  that limited throughput. Built and deployed two containerised R Shiny
+  applications with Azure Managed Identity authentication that automatically
+  pull survey data from Azure Blob Storage and generate publication-quality
+  Word and PowerPoint outputs on demand, with full Terraform-managed
+  cloud infrastructure and CI/CD deployment.
+
+details:
+  - "Situation: GPTW UK consultants were manually producing individualised manager reports and consulting decks for each client engagement — a time-intensive process with no automation, creating a throughput bottleneck and inconsistency in outputs across consultants."
+  - "Task: Build self-service, automated reporting applications that allow consultants to generate client-ready reports on demand, directly from survey data in cloud storage, without engineering involvement."
+  - "Action: Developed two containerised R Shiny applications — a manager report app and a consulting deck app — integrating with Azure Blob Storage via Managed Identity for credential-free, secure data access; implemented async report generation using R's promises and future packages to keep the UI responsive during long-running exports; generated Word and PowerPoint outputs programmatically using officer and flextable, with Likert-scale survey visualisations produced via rvg for scalable vector graphics in Office documents; packaged both applications as Docker containers with Docker Compose for local development parity; provisioned cloud infrastructure with Terraform and deployed via automated CI/CD pipelines."
+  - "Result: Replaced a fully manual report generation process with on-demand, self-service tooling — enabling GPTW UK to deliver consistent, publication-quality client reports at scale with a fraction of the previous turnaround time."
+
+skills:
+  - name: R / Shiny
+    level: 4
+  - name: Azure
+    level: 4
+  - name: Azure Blob Storage
+    level: 4
+  - name: Azure Container Instances
+    level: 3
+  - name: Azure Managed Identity
+    level: 4
+  - name: Terraform
+    level: 4
+  - name: Docker
+    level: 4
+  - name: CI/CD
+    level: 4
+  - name: Python
+    level: 3
+
+tags:
+  - R
+  - Shiny
+  - Azure
+  - Docker
+  - Terraform
+  - Report Automation
+  - HR Technology
+  - CI/CD

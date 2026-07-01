@@ -1,0 +1,76 @@
+title: PULSE — Event-Driven Fraud Risk Platform
+experienceId: moose-stack
+employer: The Moose Stack
+client: Personal Project
+sector: Platform Engineering / Fintech
+duration: 04/2026 to present
+role: Platform Engineer
+
+printSummary: >
+  Built a Kubernetes-native, event-driven microservices platform in Kotlin for
+  real-time transaction fraud risk scoring, running on GKE with Kafka and
+  GCP Pub/Sub messaging, OpenTelemetry observability, and Terraform-managed
+  GCP infrastructure.
+
+onlineSummary: >
+  PULSE (Processing Unified Live Streaming Events) is a personal platform
+  engineering project — a Kotlin Spring Boot microservices system for real-time
+  transaction fraud risk assessment. Transactions are submitted via REST API,
+  scored asynchronously through Kafka by a rules-based processor, and persisted
+  to a query store via a projector service. Runs locally on Docker Compose with
+  Kafka, Redis, PostgreSQL, and Keycloak, and deploys to GKE via a Kustomize
+  overlay swap, backed by GCP-managed Cloud SQL, Pub/Sub, Memorystore (Redis),
+  and Identity Platform — with all infrastructure provisioned via Terraform.
+
+details:
+  - "Situation: Personal project to build and demonstrate hands-on experience with Kubernetes-native platform engineering, event-driven architecture using Kafka and Pub/Sub, JVM-based microservices, and production-grade GCP infrastructure."
+  - "Task: Design and build a production-deployable, Kubernetes-native event-driven platform from scratch that runs identically on Docker Compose locally and on GKE in production, using GCP-managed services without code changes."
+  - "Action: Implemented three Kotlin Spring Boot services in a Maven multi-module project — a submitter REST API, an event-driven processor (no public API) consuming Kafka topics for fraud risk scoring, and a projector that persists scored events to PostgreSQL and exposes a query API; wired services via Kafka locally and GCP Pub/Sub in production with minimal config change via Kustomize overlays; deployed to GKE with separate local (in-cluster Kafka, PostgreSQL, Redis) and production (Cloud SQL, Pub/Sub, Memorystore) overlays; secured APIs with OAuth2/JWT using Keycloak locally and GCP Identity Platform in production, and configured Workload Identity bindings for keyless service account authentication; instrumented all services with OpenTelemetry, routing traces to Jaeger locally and GCP Cloud Trace in production; provisioned the full GCP infrastructure via Terraform (GKE, Cloud SQL, Pub/Sub, Memorystore, Artifact Registry, KMS, Cloud Trace, Identity Platform, network, Workload Identity); built GitHub Actions CI/CD to lint, test, build, and push Docker images to Artifact Registry on merge."
+  - "Result: A fully functional, production-deployed fraud risk assessment platform demonstrating end-to-end Kubernetes-native architecture, event-driven microservices with Kafka and Pub/Sub, keyless GCP authentication via Workload Identity, and distributed observability via OpenTelemetry — running on GKE."
+
+skills:
+  - name: Kotlin
+    level: 3
+  - name: Kafka
+    level: 3
+  - name: Kubernetes
+    level: 4
+  - name: GCP
+    level: 4
+  - name: GKE
+    level: 4
+  - name: Cloud SQL
+    level: 4
+  - name: GCP Pub/Sub
+    level: 4
+  - name: Memorystore
+    level: 3
+  - name: Artifact Registry
+    level: 4
+  - name: Cloud Trace
+    level: 3
+  - name: Terraform
+    level: 4
+  - name: Docker
+    level: 4
+  - name: CI/CD
+    level: 4
+  - name: OpenTelemetry
+    level: 3
+  - name: Spring Boot
+    level: 3
+  - name: OAuth2
+    level: 4
+
+tags:
+  - Kubernetes
+  - Kafka
+  - GCP
+  - GKE
+  - Kotlin
+  - Event-driven
+  - Microservices
+  - Platform Engineering
+  - Fintech
+  - OpenTelemetry
+  - Personal Project
