@@ -1,6 +1,7 @@
 ---
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
+import { cv } from "../data/cv";
 import CvLayout from "../layouts/CvLayout.astro";
 import Hero from "../components/Hero.astro";
 import Summary from "../components/Summary.astro";
@@ -10,42 +11,37 @@ import Education from "../components/Education.astro";
 import Certifications from "../components/Certifications.astro";
 import Languages from "../components/Languages.astro";
 import Hobbies from "../components/Hobbies.astro";
-import PrintButton from "../components/PrintButton.astro";
-import InteractiveExperience from "../components/InteractiveExperience";
+import InteractiveCV from "../components/InteractiveCV";
 
-const cvEntry = await getEntry("cv", "profile");
-
-if (!cvEntry) {
-  throw new Error("CV profile not found");
+function parseStartDate(period: string): Date {
+  const [monthStr, yearStr] = period.split(" to ")[0].split("/");
+  return new Date(parseInt(yearStr), parseInt(monthStr) - 1, 1);
 }
 
-const cv = cvEntry.data;
+const experienceEntries = await getCollection("experience");
+const experience = experienceEntries
+  .sort((a, b) => parseStartDate(b.data.period).getTime() - parseStartDate(a.data.period).getTime())
+  .map((entry) => ({ id: entry.id, ...entry.data }));
 
 const projectEntries = await getCollection("projects");
 const projects = projectEntries.map((entry) => ({
   id: entry.id,
-  ...entry.data
+  ...entry.data,
 }));
 ---
 
 <CvLayout title={`${cv.name} | ${cv.title}`}>
-  <PrintButton />
-
   <main class="cv-page">
     <Hero cv={cv} />
     <Summary summary={cv.summary} />
-    <Skills skillGroups={cv.skillGroups} />
 
     <section class="online-only">
-      <InteractiveExperience
-        client:load
-        cv={cv}
-        projects={projects}
-      />
+      <InteractiveCV client:load skillGroups={cv.skillGroups} experience={experience} projects={projects} />
     </section>
 
     <section class="print-only">
-      <ExperienceTimeline experience={cv.experience} />
+      <Skills skillGroups={cv.skillGroups} />
+      <ExperienceTimeline experience={experience} projects={projects} />
     </section>
 
     <Education education={cv.education} />
