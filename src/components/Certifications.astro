@@ -1,13 +1,83 @@
 ---
+import type { Certification } from "../data/cv";
+
+interface Props {
+  certifications: Certification[];
+}
+
 const { certifications } = Astro.props;
+
+const MONTHS: Record<string, number> = {
+  Jan: 0,
+  Feb: 1,
+  Mar: 2,
+  Apr: 3,
+  May: 4,
+  Jun: 5,
+  Jul: 6,
+  Aug: 7,
+  Sep: 8,
+  Oct: 9,
+  Nov: 10,
+  Dec: 11,
+};
+
+function isExpired(dateStr: string): boolean {
+  const [mon, yr] = dateStr.split(" ");
+  const month = MONTHS[mon];
+  const year = parseInt(yr);
+  if (month === undefined || isNaN(year)) return false;
+  // expired when the last day of that month is in the past
+  return new Date(year, month + 1, 0) < new Date();
+}
 ---
 
 <section class="section">
   <h2>Certifications</h2>
 
-  <ul class="compact-list">
-    {certifications.map((certification) => (
-      <li>{certification}</li>
-    ))}
+  {/* Screen: badge grid */}
+  <div class="cert-grid">
+    {
+      certifications.map((cert) => {
+        const inner = (
+          <>
+            {cert.badge ? (
+              <img src={cert.badge} alt={cert.name} class="cert-badge" />
+            ) : (
+              <div class="cert-badge-placeholder" />
+            )}
+            <h3>{cert.inProgress ? `Pursuing: ${cert.name}` : cert.name}</h3>
+            <div class="cert-dates">
+              {cert.issued && <span>Issued {cert.issued}</span>}
+              {cert.expires && (
+                <span>
+                  {isExpired(cert.expires) ? "Expired" : "Expires"} {cert.expires}
+                </span>
+              )}
+            </div>
+          </>
+        );
+        return cert.credly ? (
+          <a class="cert-card" href={cert.credly} target="_blank" rel="noopener noreferrer">
+            {inner}
+          </a>
+        ) : (
+          <div class="cert-card">{inner}</div>
+        );
+      })
+    }
+  </div>
+
+  {/* Print: plain text list */}
+  <ul class="cert-print-list">
+    {
+      certifications.map((cert) => (
+        <li>
+          {cert.inProgress ? `Pursuing: ${cert.name}` : cert.name}
+          {cert.issued && ` — Issued ${cert.issued}`}
+          {cert.expires && `, ${isExpired(cert.expires) ? "expired" : "expires"} ${cert.expires}`}
+        </li>
+      ))
+    }
   </ul>
 </section>

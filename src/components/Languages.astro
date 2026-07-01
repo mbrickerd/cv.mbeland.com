@@ -1,4 +1,8 @@
 ---
+interface Props {
+  languages: string[];
+}
+
 const { languages } = Astro.props;
 ---
 
@@ -6,8 +10,6 @@ const { languages } = Astro.props;
   <h2>Languages</h2>
 
   <div class="inline-list">
-    {languages.map((language) => (
-      <span>{language}</span>
-    ))}
+    {languages.map((language) => <span>{language}</span>)}
   </div>
 </section>

@@ -1,4 +1,8 @@
 ---
+interface Props {
+  hobbies: string[];
+}
+
 const { hobbies } = Astro.props;
 ---
 
@@ -6,8 +10,6 @@ const { hobbies } = Astro.props;
   <h2>Hobbies</h2>
 
   <div class="inline-list">
-    {hobbies.map((hobby) => (
-      <span>{hobby}</span>
-    ))}
+    {hobbies.map((hobby) => <span>{hobby}</span>)}
   </div>
 </section>
