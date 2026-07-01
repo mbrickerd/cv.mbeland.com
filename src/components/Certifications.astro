@@ -1,0 +1,13 @@
+---
+const { certifications } = Astro.props;
+---
+
+<section class="section">
+  <h2>Certifications</h2>
+
+  <ul class="compact-list">
+    {certifications.map((certification) => (
+      <li>{certification}</li>
+    ))}
+  </ul>
+</section>

@@ -1,0 +1,16 @@
+---
+const { cv } = Astro.props;
+---
+
+<header class="hero">
+  <p class="eyebrow">Public CV</p>
+  <h1>{cv.name}</h1>
+  <h2>{cv.title}</h2>
+
+  <div class="contact-row">
+    <span>{cv.location}</span>
+    <a href={`mailto:${cv.email}`}>{cv.email}</a>
+    {cv.linkedin && <a href={cv.linkedin}>LinkedIn</a>}
+    {cv.github && <a href={cv.github}>GitHub</a>}
+  </div>
+</header>

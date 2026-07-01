@@ -1,0 +1,13 @@
+---
+const { languages } = Astro.props;
+---
+
+<section class="section">
+  <h2>Languages</h2>
+
+  <div class="inline-list">
+    {languages.map((language) => (
+      <span>{language}</span>
+    ))}
+  </div>
+</section>

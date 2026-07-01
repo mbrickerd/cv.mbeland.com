@@ -1,0 +1,39 @@
+title: MLOps Platform
+experienceId: eraneos-ml-engineer
+employer: Eraneos
+client: Client project
+sector: Machine Learning Platform
+duration: 2021 to 2022
+role: Machine Learning Engineer
+
+printSummary: >
+  Implemented an automated MLOps pipeline on AWS SageMaker with CI/CD for
+  training, inference and monitoring.
+
+onlineSummary: >
+  Built an end-to-end machine learning operations setup on AWS.
+
+details:
+  - Implemented an automated MLOps pipeline on AWS SageMaker.
+  - Used SageMaker Pipelines, Data Wrangler and Clarify.
+  - Integrated CI/CD for training, inference and model monitoring.
+  - Supported production-grade model lifecycle management.
+
+skills:
+  - name: AWS
+    level: 4
+  - name: SageMaker
+    level: 4
+  - name: MLOps
+    level: 5
+  - name: CI/CD
+    level: 4
+  - name: Model monitoring
+    level: 4
+  - name: Machine Learning
+    level: 4
+
+tags:
+  - AWS
+  - MLOps
+  - SageMaker

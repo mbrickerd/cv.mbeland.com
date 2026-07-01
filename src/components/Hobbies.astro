@@ -1,0 +1,13 @@
+---
+const { hobbies } = Astro.props;
+---
+
+<section class="section">
+  <h2>Hobbies</h2>
+
+  <div class="inline-list">
+    {hobbies.map((hobby) => (
+      <span>{hobby}</span>
+    ))}
+  </div>
+</section>

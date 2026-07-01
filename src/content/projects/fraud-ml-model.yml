@@ -1,0 +1,38 @@
+title: Fraud ML Model Upgrade
+experienceId: bol-senior-data-engineer
+employer: bol.com
+client: Internal
+sector: E-commerce / Fraud & Risk
+duration: 2025 to present
+role: Senior Data Engineer
+
+printSummary: >
+  Upgraded an existing fraud detection machine learning model and implemented
+  structured retraining and monitoring.
+
+onlineSummary: >
+  Improved the reliability and operational maintainability of a fraudulent retailer
+  detection model.
+
+details:
+  - Upgraded an existing machine learning model for fraudulent retailer detection.
+  - Implemented a structured retraining process.
+  - Added monitoring and production oversight to improve model reliability.
+  - Worked at the intersection of production data engineering and applied ML.
+
+skills:
+  - name: Python
+    level: 5
+  - name: Machine Learning
+    level: 4
+  - name: Model monitoring
+    level: 4
+  - name: Data engineering
+    level: 5
+  - name: MLOps
+    level: 4
+
+tags:
+  - Python
+  - ML
+  - Fraud

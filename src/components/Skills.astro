@@ -1,0 +1,20 @@
+---
+const { skillGroups } = Astro.props;
+---
+
+<section class="section">
+  <h2>Skills</h2>
+
+  <div class="skill-groups">
+    {skillGroups.map((group) => (
+      <div class="skill-group">
+        <h3>{group.group}</h3>
+        <div class="skill-tags">
+          {group.skills.map((skill) => (
+            <span class="skill-tag">{skill}</span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

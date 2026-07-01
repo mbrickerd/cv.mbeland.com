@@ -1,0 +1,142 @@
+name: Mallory Brickerd-Eland
+title: Senior Data Engineer
+location: Amsterdam, the Netherlands
+email: mallorybrickerd@gmail.com
+linkedin: https://www.linkedin.com/in/mallorybrickerd/
+github: https://github.com/mbrickerd
+
+summary: >
+  Senior data engineer with a background in machine learning and analytics,
+  focused on turning complex, fragmented data into reliable, business-ready
+  models. Hands-on experience across GCP, Azure and AWS, using SQL, Python,
+  dbt, BigQuery, Airflow/Cloud Composer and Terraform to build maintainable
+  data pipelines and governed data models.
+
+skillGroups:
+  - group: Data Engineering
+    skills:
+      - SQL
+      - Python
+      - Apache Airflow
+      - BigQuery
+      - dbt
+      - Data modelling
+      - PySpark
+      - Databricks
+
+  - group: Cloud & DevOps
+    skills:
+      - GCP
+      - Azure
+      - AWS
+      - Terraform
+      - CI/CD
+      - GitHub Actions
+      - Azure DevOps
+      - Cloud Composer
+      - Azure Data Factory
+
+  - group: Machine Learning
+    skills:
+      - Machine Learning
+      - MLOps
+      - Model monitoring
+      - SHAP
+      - MLflow
+      - SageMaker
+      - Forecasting
+
+experience:
+  - id: bol-senior-data-engineer
+    company: bol.com
+    location: Utrecht, the Netherlands
+    role: Senior Data Engineer
+    period: 08/2025 to present
+    highlights:
+      - title: Data Platform Standardisation
+        summary: >
+          Moved transformation logic from Kotlin services into Airflow/dbt
+          workflows, making business logic easier to inspect, test and maintain.
+      - title: Fraud ML Model Upgrade
+        summary: >
+          Upgraded an existing machine learning model for fraudulent retailer
+          detection and implemented a structured retraining and monitoring process.
+
+  - id: eraneos-senior-data-engineer
+    company: Eraneos
+    location: Amsterdam, the Netherlands
+    role: Senior Data Engineer
+    period: 04/2024 to 07/2025
+    highlights:
+      - title: Sales Order Domain Models
+        summary: >
+          Owned the redesign of legacy sales-order logic into governed dbt models,
+          improving consistency and creating business-ready datasets.
+      - title: Analytics Data Hub Orchestration Design
+        summary: >
+          Built modular data pipelines using BigQuery, dbt and Cloud Composer/Airflow,
+          with GitHub Actions and Terraform for CI/CD and infrastructure provisioning.
+      - title: Railway Smart Matching Engine
+        summary: >
+          Built end-to-end PySpark/Databricks pipelines under a Medallion architecture.
+
+  - id: eraneos-senior-ml-engineer
+    company: Eraneos
+    location: Amsterdam, the Netherlands
+    role: Senior Machine Learning Engineer
+    period: 01/2023 to 03/2024
+    highlights:
+      - title: R2Py Pipeline Refactor
+        summary: >
+          Refactored an R-based forecasting pipeline into PySpark, integrated into
+          Azure Data Factory and Databricks.
+      - title: Model Explainability Pipeline
+        summary: >
+          Built a scalable SHAP-based explainability layer for SKU-level demand forecasts.
+
+  - id: eraneos-ml-engineer
+    company: Eraneos
+    location: Amsterdam, the Netherlands
+    role: Machine Learning Engineer
+    period: 01/2021 to 12/2022
+    highlights:
+      - title: MLOps Platform
+        summary: >
+          Implemented an end-to-end automated MLOps pipeline on AWS SageMaker with
+          CI/CD integration for training, inference and monitoring.
+
+  - id: eraneos-junior-data-scientist
+    company: Eraneos
+    location: Amsterdam, the Netherlands
+    role: Junior Data Scientist
+    period: 03/2019 to 12/2020
+    highlights:
+      - title: Personalisation / Recommendation Engine
+        summary: >
+          Built and deployed a user-based recommendation engine integrated with Airflow
+          pipelines and marketing systems.
+
+education:
+  - degree: Bachelor of Science
+    field: Applied Mathematics and Computer Science
+    institution: The College of William & Mary
+    location: Williamsburg, Virginia, United States
+    completed: 05/2016
+
+certifications:
+  - AZ-900: Azure Fundamentals
+  - DP-203: Azure Data Engineer Associate
+  - AWS Machine Learning - Specialty
+  - Currently studying for: GCP Professional Data Engineer
+
+languages:
+  - English: Native language
+  - Dutch: Professional working proficiency
+
+hobbies:
+  - Boxing
+  - Cycling
+  - Yoga
+  - DIY
+  - Photography
+  - DJ

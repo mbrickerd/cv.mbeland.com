@@ -1,0 +1,42 @@
+title: Analytics Data Hub Orchestration Design
+experienceId: eraneos-senior-data-engineer
+employer: Eraneos
+client: Client project
+sector: Analytics / Cloud Data Platform
+duration: 2024 to 2025
+role: Senior Data Engineer
+
+printSummary: >
+  Built modular BigQuery, dbt and Cloud Composer/Airflow pipelines with
+  GitHub Actions and Terraform.
+
+onlineSummary: >
+  Designed orchestration and transformation layers for an analytics data hub.
+
+details:
+  - Built modular data pipelines using BigQuery, dbt and Cloud Composer/Airflow.
+  - Used GitHub Actions for CI/CD.
+  - Used Terraform for infrastructure provisioning.
+  - Structured raw data into maintainable, tested transformation layers.
+  - Supported downstream analytics use cases with governed transformation logic.
+
+skills:
+  - name: BigQuery
+    level: 5
+  - name: dbt
+    level: 4
+  - name: Apache Airflow
+    level: 4
+  - name: Cloud Composer
+    level: 4
+  - name: Terraform
+    level: 4
+  - name: GitHub Actions
+    level: 4
+  - name: GCP
+    level: 4
+
+tags:
+  - GCP
+  - dbt
+  - Airflow

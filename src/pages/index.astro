@@ -1,0 +1,56 @@
+---
+import { getCollection, getEntry } from "astro:content";
+
+import CvLayout from "../layouts/CvLayout.astro";
+import Hero from "../components/Hero.astro";
+import Summary from "../components/Summary.astro";
+import Skills from "../components/Skills.astro";
+import ExperienceTimeline from "../components/ExperienceTimeline.astro";
+import Education from "../components/Education.astro";
+import Certifications from "../components/Certifications.astro";
+import Languages from "../components/Languages.astro";
+import Hobbies from "../components/Hobbies.astro";
+import PrintButton from "../components/PrintButton.astro";
+import InteractiveExperience from "../components/InteractiveExperience";
+
+const cvEntry = await getEntry("cv", "profile");
+
+if (!cvEntry) {
+  throw new Error("CV profile not found");
+}
+
+const cv = cvEntry.data;
+
+const projectEntries = await getCollection("projects");
+const projects = projectEntries.map((entry) => ({
+  id: entry.id,
+  ...entry.data
+}));
+---
+
+<CvLayout title={`${cv.name} | ${cv.title}`}>
+  <PrintButton />
+
+  <main class="cv-page">
+    <Hero cv={cv} />
+    <Summary summary={cv.summary} />
+    <Skills skillGroups={cv.skillGroups} />
+
+    <section class="online-only">
+      <InteractiveExperience
+        client:load
+        cv={cv}
+        projects={projects}
+      />
+    </section>
+
+    <section class="print-only">
+      <ExperienceTimeline experience={cv.experience} />
+    </section>
+
+    <Education education={cv.education} />
+    <Certifications certifications={cv.certifications} />
+    <Languages languages={cv.languages} />
+    <Hobbies hobbies={cv.hobbies} />
+  </main>
+</CvLayout>
